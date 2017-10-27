@@ -22,8 +22,6 @@ RUN apt-get update && \
 
 RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && locale-gen
 
-ADD fix-permissions /usr/local/bin/
-
 RUN pip install --upgrade pip
 RUN pip install --upgrade tensorflow
 RUN pip install ipykernel \
