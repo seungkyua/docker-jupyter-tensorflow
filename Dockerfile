@@ -16,9 +16,9 @@ RUN apt-get update && \
              bzip2 \
              python-pip \
              python-setuptools \
-             fonts-liberation
-#       apt-get clean  && \
-#    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+             fonts-liberation && \
+       apt-get clean  && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && locale-gen
 
